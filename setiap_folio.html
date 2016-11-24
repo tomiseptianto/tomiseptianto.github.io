@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar Design Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body>
+    <!-- <div id="pertama"> -->
+      <div id="header">
+        <img src="assets/logo.png" id="logo" alt="logo" />
+        <div id="menu">
+          <img src="assets/menures.png" id="nav_icon" alt="" onclick="toggleMenu()"/>
+          <div id="menu_text" onclick="toggleMenu()">Menu</div>
+          <div class="konten" id="menu_3">
+            <a href="index.html" class="kolom_3">Hallo</a>
+            <a href="#kedua" class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Karya</a>
+            <a href="#ketiga" class="kolom_3" onclick="return smoothScroll('ketiga')">Kontak</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="karya_box">
+
+        <div class="panah_box panah_box_kr" onclick="ganti_sebelum()"> < </div>
+
+        <div id="karya_box_kr">
+          <h2>Judul Karya</h2>
+          <p class="deskripsi">Ini contoh deskripsi yang lebih panjang</p>
+        </div>
+
+        <div id="karya_box_knn">
+          <img src="assets/bg-pertama.jpg" alt="" id="target_gambar"/>
+        </div>
+
+        <div class="panah_box panah_box_knn" onclick="ganti_berikut()"> > </div>
+      </div>
+
+
+      <div class="clear"></div>
+
+      <div id="karya_lain">
+        <img src="assets/bg-pertama.jpg" alt="" onclick="ganti_gambar(this)" class="0"/>
+        <img src="assets/anne2.jpg" alt=""      onclick="ganti_gambar(this)" class="1"/>
+        <img src="assets/anne3.jpg" alt=""      onclick="ganti_gambar(this)" class="2"/>
+      </div>
+
+      <div class="clear"></div>
+
+    <div id="footer">
+        <p>&copy; Maspadoli 2016</p>
+    </div>
+
+    <script src="folio.js"></script>
+  </body>
+</html>
